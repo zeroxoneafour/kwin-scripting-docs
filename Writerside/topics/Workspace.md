@@ -101,11 +101,13 @@ clientArea
 : `clientArea(options: ClientAreaOption, client: Window, screen: Output): QRect`
 : `clientArea(options: ClientAreaOption, client: Window, pos: QPoint): QRect`
 
-clientArea
-
 createDesktop
+: Creates a new virtual desktop at position I guess?
+: `createDesktop(position: number, name: string)`
 
 removeDesktop
+: Removes virtual desktop at position, I don't know if is overloaded for new VirtualDesktop type or not
+: `removeDesktop(position: number)`
 
 supportInformation
 
