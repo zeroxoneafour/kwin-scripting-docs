@@ -110,46 +110,86 @@ removeDesktop
 : `removeDesktop(position: number)`
 
 supportInformation
+: Gets a large amount of support information about the system. Can be used to check if running X11 or Wayland
+: `supportInformation(): string`
 
 raiseWindow
+: Raise a window above other windows
+: `raiseWindow(window: Window)`
 
 getClient
+: No clue why you would use this, but gets a client based off of its ID
+: `getClient(id: number): Window`
 
 windowAt
+: Gets windows at a position
+: `windowAt(point: QPoint, count: number = 1): Window[]`
 
 isEffectActive
+: Checks if a certain plugin is enabled. Yet to see if works with general KWin scripts as well
+: `isEffectActive(id: string): boolean`
 
 windowList
+: No doxygen, but I assume it lists all clients like the old `getClients` from 5.27
+: `windowList(): Window[]`
 
 ## Signals
 
 windowAdded
+: Signal emitted when a window is added
+: `windowAdded(window: Window)`
 
 windowRemoved
+: Signal emitted when a window is removed (usually closed)
+: `windowRemoved(window: Window)`
 
 windowActivated
+: Signal emitted when a window is focused
+: `windowActivated(window: Window)`
 
 desktopsChanged
+: Signal emitted when virtual desktops are added or removed
+: `desktopsChanged()`
 
 desktopLayoutChanged
+: Emitted when the desktop layout is changed. I don't know what it means either
+: `desktopLayoutChanged()`
 
 screensChanged
+: Emitted when screens are added or removed
+: `screensChanged()`
 
 currentActivityChanged
+: Emitted when the current activity changes
+: `currentActivityChanged(id: string)`
 
 activitiesChanged
+: Emitted when activities are modified (not when the current one changes). No clue what `id` is here exactly
+: `activitiesChanged(id: string)`
 
 activityAdded
+: Emitted when an activity is added
+: `activityAdded(id: string)`
 
 activityRemoved
+: Emitted when an activity is removed
+: `activityRemoved(id: string)`
 
 virtualScreenSizeChanged
+: Emitted when the virtual screen size is changed
+: `virtualScreenSizeChanged()`
 
 virtualScreenGeometryChanged
+: Emitted when the virtual screen geometry is changed. Seems more useful than size
+: `virtualScreenGeometryChanged()`
 
 currentDesktopChanged
+: Emitted when the desktop is switched. Not to be confused with `desktopsChanged`
+: `currentDesktopChanged(oldDesktop: Desktop)`
 
 cursorPosChanged
+: Emitted when the cursor position is changed. Probably best to not hook into this too much
+: `cursorPosChanged()`
 
 ## Slots
 

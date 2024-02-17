@@ -3,11 +3,26 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="hi" name="KWin API"
-                 start-page="API-Documentation.md">
+                 start-page="KWin-API.md">
 
+    <toc-element topic="KWin-API.md"/>
+    <toc-element topic="Getting-Started.md">
+        <toc-element topic="File-Structure.md"/>
+        <toc-element topic="Metadata.md"/>
+        <toc-element topic="Building.md"/>
+    </toc-element>
     <toc-element topic="API-Documentation.md">
-        <toc-element topic="Workspace.md"/>
-        <toc-element topic="Window.md"/>
-        <toc-element topic="Desktop.md"/>
+        <toc-element topic="Workspace.md">
+            <toc-element topic="Output.md"/>
+            <toc-element topic="Desktop.md"/>
+            <toc-element topic="Window.md"/>
+            <toc-element topic="TileManager.md"/>
+            <toc-element topic="Tile.md"/>
+        </toc-element>
+        <toc-element topic="Options.md"/>
+        <toc-element topic="KWin.md"/>
+        <toc-element topic="DBusCall.md"/>
+        <toc-element topic="Qt-Classes.md"/>
+        <toc-element topic="PlasmaCore.md"/>
     </toc-element>
 </instance-profile>
