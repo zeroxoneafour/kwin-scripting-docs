@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="2a7216a3">
+        <description>Created after removal of "Section Starting Page" from Help Instance</description>
+        <accepts>Section-Starting-Page.html</accepts>
+    </rule>
+    <rule id="4e03a0a7">
+        <description>Created after removal of "Workspace" from Help Instance</description>
+        <accepts>Workspace.html</accepts>
+    </rule>
+</rules>

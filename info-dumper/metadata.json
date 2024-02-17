@@ -1,0 +1,20 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "vaughanm1@protonmail.com",
+                "Name": "Vaughan Milliman"
+            }
+        ],
+        "Description": "for developement pureposes",
+        "Icon": "preferences-system-windows-effect-presentwindows",
+        "Id": "info-dumper",
+        "License": "MIT",
+        "Name": "Info Dumper",
+        "Version": "0.1.0"
+    },
+    "X-KDE-PluginKeyword": "polonium",
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-API": "declarativescript"
+}

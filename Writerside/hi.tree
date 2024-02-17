@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi" name="KWin API"
+                 start-page="API-Documentation.md">
+
+    <toc-element topic="API-Documentation.md">
+        <toc-element topic="Workspace.md"/>
+        <toc-element topic="Window.md"/>
+        <toc-element topic="Desktop.md"/>
+    </toc-element>
+</instance-profile>
