@@ -16,10 +16,10 @@ Example `metadata.json` from [Polonium](https://github.com/zeroxoneafour/poloniu
         ],
         "Description": "Autotile using KWin 5.27 features",
         "Icon": "preferences-system-windows-effect-presentwindows",
-        "Id": "%NAME%",
+        "Id": "polonium",
         "License": "MIT",
         "Name": "Polonium",
-        "Version": "%VERSION%"
+        "Version": "1.0.0"
     },
     "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted",
     "X-KDE-PluginKeyword": "polonium",
