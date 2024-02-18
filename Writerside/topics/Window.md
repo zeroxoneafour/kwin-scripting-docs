@@ -377,10 +377,10 @@ shadeChanged
 : `shadeChanged()`
 
 opacityChanged
-: `opacityChanged()`
+: `opacityChanged(window: Window, oldOpacity: number)`
 
 damaged
-: `damaged()`
+: `damaged(window: Window)`
 
 inputTransformationChanged
 : `inputTransformationChanged()`
@@ -389,10 +389,10 @@ closed
 : `closed()`
 
 windowShown
-: `windowShown()`
+: `windowShown(window: Window)`
 
 windowHidden
-: `windowHidden()`
+: `windowHidden(window: Window)`
 
 outputChanged
 : `outputChanged()`
@@ -413,13 +413,13 @@ shadowChanged
 : `shadowChanged()`
 
 bufferGeometryChanged
-: `bufferGeometryChanged()`
+: `bufferGeometryChanged(oldGeometry: QRect)`
 
 frameGeometryChanged
-: `frameGeometryChanged()`
+: `frameGeometryChanged(oldGeometry: QRect)`
 
 clientGeometryChanged
-: `clientGeometryChanged()`
+: `clientGeometryChanged(oldGeometry: QRect)`
 
 frameGeometryAboutToChange
 : `frameGeometryAboutToChange()`
@@ -428,7 +428,7 @@ visibleGeometryChanged
 : `visibleGeometryChanged()`
 
 tileChanged
-: `tileChanged()`
+: `tileChanged(tile: Tile)`
 
 fullScreenChanged
 : `fullScreenChanged()`
@@ -449,10 +449,10 @@ activeChanged
 : `activeChanged()`
 
 keepAboveChanged
-: `keepAboveChanged()`
+: `keepAboveChanged(keepAbove: boolean)`
 
 keepBelowChanged
-: `keepBelowChanged()`
+: `keepBelowChanged(keepBelow: boolean)`
 
 demandsAttentionChanged
 : `demandsAttentionChanged()`
@@ -479,7 +479,7 @@ captionNormalChanged
 : `captionNormalChanged()`
 
 maximizedAboutToChange
-: `maximizedAboutToChange()`
+: `maximizedAboutToChange(mode: MaximizeMode)`
 
 maximizedChanged
 : `maximizedChanged()`
@@ -503,7 +503,7 @@ interactiveMoveResizeStarted
 : `interactiveMoveResizeStarted()`
 
 interactiveMoveResizeStepped
-: `interactiveMoveResizeStepped()`
+: `interactiveMoveResizeStepped(oldGeometry: QRect)`
 
 interactiveMoveResizeFinished
 : `interactiveMoveResizeFinished()`
@@ -512,13 +512,13 @@ closeableChanged
 : `closeableChanged()`
 
 minimizeableChanged
-: `minimizeableChanged()`
+: `minimizeableChanged(minimizeable: boolean)`
 
 shadeableChanged
-: `shadeableChanged()`
+: `shadeableChanged(shadeable: boolean)`
 
 maximizeableChanged
-: `maximizeableChanged()`
+: `maximizeableChanged(maximizeable: boolean)`
 
 desktopFileNameChanged
 : `desktopFileNameChanged()`
@@ -527,13 +527,13 @@ applicationMenuChanged
 : `applicationMenuChanged()`
 
 hasApplicationMenuChanged
-: `hasApplicationMenuChanged()`
+: `hasApplicationMenuChanged(hasApplicationMenu: boolean)`
 
 applicationMenuActiveChanged
-: `applicationMenuActiveChanged()`
+: `applicationMenuActiveChanged(active: boolean)`
 
 unresponsiveChanged
-: `unresponsiveChanged()`
+: `unresponsiveChanged(unresponsive: boolean)`
 
 decorationChanged
 : `decorationChanged()`
