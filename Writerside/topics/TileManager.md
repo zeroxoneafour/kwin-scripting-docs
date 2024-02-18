@@ -27,7 +27,7 @@ bestTileForPosition
 
 tileRemoved
 : Emitted when a tile is removed I guess?
-: `tileRemoved()`
+: `tileRemoved(tile: Tile)`
 
 ## Remarks
 
