@@ -1,12 +1,13 @@
 import QtQuick;
 import org.kde.kwin;
+import org.kde.kwin.Scripting;
 
 Item
 {
     Component.onCompleted:
     {
         print("Info dumper v0.1.0 test");
-        dumpApiData(Workspace, "Workspace");
+        dumpApiData(Scripting, "Scripting");
     }
     
     function dumpApiData(obj, name)

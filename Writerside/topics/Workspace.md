@@ -72,6 +72,10 @@ cursorPos
 : Cursor position <3
 : `cursorPos: QPoint`
 
+windows
+: List of windows. **Not available in JavaScript, use `windowList` instead**
+: `windows: Window[]`
+
 ## Methods
 
 sendClientToScreen
@@ -130,7 +134,7 @@ isEffectActive
 : `isEffectActive(id: string): boolean`
 
 windowList
-: No doxygen, but I assume it lists all clients like the old `getClients` from 5.27
+: No doxygen, but I assume it lists all clients like the old `getClients` from 5.27. **Not available in QML**
 : `windowList(): Window[]`
 
 ## Signals

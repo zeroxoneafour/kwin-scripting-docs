@@ -22,6 +22,7 @@
         <toc-element topic="Options.md"/>
         <toc-element topic="KWin.md"/>
         <toc-element topic="DBusCall.md"/>
+        <toc-element topic="ShortcutHandler.md"/>
         <toc-element topic="Qt-Classes.md"/>
         <toc-element topic="PlasmaCore.md"/>
     </toc-element>
