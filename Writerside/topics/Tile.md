@@ -55,7 +55,8 @@ layoutDirection
 ## Methods
 
 resizeByPixels
-: Resize by a certain amount of pixels in a direction. [Edge enum](https://doc.qt.io/qt-6/qt.html#Edge-enum)
+: Resize by a certain amount of pixels in a direction. Negative delta moves edge outwards, positive inwards?
+[Edge enum](https://doc.qt.io/qt-6/qt.html#Edge-enum)
 : `resizeByPixels(delta: number, edge: Edge)`
 
 moveByPixels
