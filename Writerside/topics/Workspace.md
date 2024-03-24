@@ -110,8 +110,8 @@ createDesktop
 : `createDesktop(position: number, name: string)`
 
 removeDesktop
-: Removes virtual desktop at position, I don't know if is overloaded for new VirtualDesktop type or not
-: `removeDesktop(position: number)`
+: Removes virtual desktop
+: `removeDesktop(desktop: VirtualDesktop)`
 
 supportInformation
 : Gets a large amount of support information about the system. Can be used to check if running X11 or Wayland
